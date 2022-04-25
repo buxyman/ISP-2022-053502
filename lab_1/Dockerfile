@@ -1,3 +1,4 @@
-FROM python:3.8.10
-ADD main.py /
+FROM python:3.8-slim-buster
+WORKDIR /lab_1
+COPY main.py task1.py ./
 CMD [ "python", "./main.py" ]
