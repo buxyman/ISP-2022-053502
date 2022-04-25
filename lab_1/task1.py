@@ -67,13 +67,13 @@ class Task:
             for j in self.dictionary.keys():
                 if self.dictionary[j] == i:
                     d[j] = self.dictionary[j]
-        print(d)
+
         self.top_ngram = d.copy()
-        print('1', self.top_ngram)
+
         for p in self.top_ngram.keys():
             if len(p) != n:
                 d.pop(p)
-        print('2', d)
+
         l = 0
         print('top ', k, 'n-gram:')
         for key in d.keys():
